@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YCH fic Valentine</title>
+<link rel="stylesheet" href="nsfw.css" />
+</head>
+
+<body>
+<div class="overall">
+<div class="container">
+<div class="form-container">
+  <div class="top-group">
+    <p>• Thông tin top</p>
+    <div class="form-group">
+      <label>Tên top là:</label>
+      <input id="a">
+    </div>
+
+    <div class="form-group">
+      <label>Danh xưng của top là:</label>
+      <input id="dxa">
+    </div>
+
+    <div class="form-group">
+      <label>Top xưng hô với bot là:</label>
+      <input id="ag">
+    </div>
+
+    <div class="form-group">
+      <label>Top gọi bot là:</label>
+      <input id="agb">
+    </div>
+
+    <div class="form-group">
+      <label>Top gọi tên bot là:</label>
+      <input id="agtb">
+    </div>
+  </div>
+
+
+  <div class="bot-group">
+    <p>• Thông tin bot</p>
+    <div class="form-group">
+      <label>Tên bot là:</label>
+      <input id="b">
+    </div>
+
+    <div class="form-group">
+      <label>Danh xưng của bot là:</label>
+      <input id="dxb">
+    </div>
+
+    <div class="form-group">
+      <label>Bot xưng hô với top là:</label>
+      <input id="bg">
+    </div>
+
+    <div class="form-group">
+      <label>Bot gọi top là:</label>
+      <input id="bga">
+    </div>
+
+    <div class="form-group">
+      <label>Bot gọi tên top là:</label>
+      <input id="bgta">
+    </div>
+  </div>
+
+</div>
+
+<div class="note">
+<p> <a>* </a> Sau khi điền xong thông tin nhân vật, bạn có thể bấm vào "Xem ví dụ" để kiểm tra lại thông tin. Nếu đã thấy ổn thỏa, bấm vào nút "Xác nhận" bên cạnh để đọc fic nhé.
+  <br><a>*</a> Nếu muốn đổi vị trí top - bot, bạn có thể bấm vào nút "Đổi vị trí".
+  <br>Chúc bạn có một trải nghiệm vui vẻ!</p>
+</div>
+<div class="button-group">
+<button class="demo" onclick="demo()">Xem ví dụ</button>
+<button class="done" onclick="generateStory()">Xác nhận</button>
+<button class="switch" onclick="switchPosition()">Đổi vị trí</button>
+</div>
+
+<div class="story" id="output"></div>
+</div>
+<button id="backTopBtn" onclick="scrollToTop()">↑</button>
+</div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2 style="font-weight: bolder; color: red;">⚠ WARNING ⚠</h2>
+    <p style="text-align: justify;">
+      - Fic chứa yếu tố <a style="font-weight: bolder;">NSFW</a>.
+      <br> - Bot ở đây mặc định có 🐱, chỉ phù hợp với bot có <a style="font-weight: bolder;"> giới tính sinh học là nữ</a> hoặc bot là <a style="font-weight: bolder;">cuntboy</a>.
+      <br>- Vì là YCH fic nên không thể tránh khỏi trường hợp OOC, mong bạn thông cảm.
+      <br><br> Hãy chắc chắn rằng bạn đã đủ 18 tuổi trở lên & ổn thỏa với nội dung đã được warning trước khi bấm vào đọc! Ngược lại, vui lòng <a style="font-weight: bolder;">click back</a>.
+    </p>
+    <button class="close" onclick="closep()">Đồng ý</button>
+    <button class="cancel" onclick="cancelp()">Quay lại</button>
+  </div>
+</div>
+
+<script src="chung.js"></script>
+<script src="nsfw.js"></script>
+</body>
+</html>

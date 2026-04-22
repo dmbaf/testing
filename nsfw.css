@@ -1,0 +1,184 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  background: rgb(20, 28, 41);
+  color:white;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+  height: 100%;
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  background: rgba(255,255,255,0.05);
+  padding:30px;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:30px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.ctn
+{ 
+  width:100%;
+  background: rgba(20, 28, 41, 0.552);
+  padding:15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  justify-self: center;
+}
+
+.top-group,.bot-group{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.top-group p, .bot-group p{
+  text-transform: uppercase;
+  margin:0;
+  font-size: 111%;
+  font-weight: bolder;
+}
+
+.form-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px 20px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+label{
+  margin-bottom:5px;
+  opacity:0.8;
+}
+
+input{
+  padding:5px;
+  border:none;
+  color:white;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+
+.button-group{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+  justify-content:center;
+}
+
+button{
+  background:#00c6ff;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  cursor:pointer;
+  font-weight:bolder;
+  transition:0.3s;
+}
+
+.story{
+  margin-top:30px;
+  padding:25px;
+  background:rgba(0,0,0,0.5);
+  white-space:pre-line;
+  line-height:1.8;
+  animation:fadeIn 0.5s ease;
+}
+
+.note a {color: red;}
+.note {margin-top: 20px;}
+
+.overall{
+  width: 100%;
+  justify-content: center; 
+  display: flex;
+}
+
+#backTopBtn{
+  height: 36px;
+  left: 90%;
+  top: 90%;
+  position: sticky;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: #00c6ff;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+#backTopBtn:hover,.demo:hover,.done:hover,.switch:hover,.close:hover,.cancel:hover {
+ transform: scale(1.05);
+}
+#backTopBtn,.demo,.done,.switch,.close,.cancel {white-space: nowrap;} 
+.popup{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.popup-content{
+  background: #1c2333;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content p{
+  text-align: justify;
+}
+.popup-content button{
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+  body {font-size: 12px;}
+
+  .container{
+    padding:20px;
+    max-width: 700px;
+  }
+  .form-container{
+    grid-template-columns: 1fr;
+    gap:10px 10px;
+  }
+  .overall
+  {
+    padding: 0;
+  }
+  
+  input{
+    padding:6px;
+  }
+  .bot-group p {margin-top: 15px;}
+  button, #backTopBtn {
+    padding: 5px 10px;
+  }
+}
